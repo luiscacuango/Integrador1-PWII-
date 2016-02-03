@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html [<!ENTITY nbsp "&#160;">]>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+        <title>Inicio</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <!-- Links -->
+        <link rel="stylesheet" href="css/camera.css"/>
+        <link rel="stylesheet" href="css/search.css"/>
+        <link rel="stylesheet" href="css/google-map.css"/>
+        <!--JS-->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/rd-smoothscroll.min.js"></script>
+        <script src='js/device.min.js'></script>
+    </head>
+    <body>
+        <div class="page">
+            <!--========================================================
+                                      ENCABEZADO
+            =========================================================-->
+            <header>  
+                <div class="container top-sect">
+                    <div class="navbar-header">
+                        <h1 class="navbar-brand">
+                            <a data-type='rd-navbar-brand' href="index.xhtml">
+                                <h:outputText value="#{seccionController.getSeccion(100).seccNombre}"/>
+                                <small> <h:outputText value="#{departamentoController.getDepartamento(7).depaNombre}"/> </small>
+                            </a>
+                        </h1>
+                        <a class="search-form_toggle" href="#"></a>
+                    </div>
+
+                    <div class="help-box text-right">
+                        <p><h:outputText value="#{seccionController.getSeccion(103).seccNombre}"/></p>
+                        <a href="tel:023968800"><h:outputText value="#{seccionController.getSeccion(102).seccNombre}"/></a>
+                        <small><span>Horarios de atención:</span><h:outputText value="#{seccionController.getSeccion(109).seccNombre}"/></small>
+                    </div>
+                </div>
+
+                <div id="stuck_container" class="stuck_container">
+                    <div class="container">   
+                        <nav class="navbar navbar-default navbar-static-top pull-left">            
+
+                            <div class="">  
+                                <ul class="nav navbar-nav sf-menu" data-type="navbar">
+                                    <li class="active">
+                                        <a href="index.xhtml">Inicio</a>
+                                    </li>
+                                    <li id="dgth" class="dropdown">
+                                        <a href="index-subdireccion.xhtml"><h:outputText value="#{seccionController.getSeccion(104).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(1).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(2).seccNombre}"/></a>                      
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(3).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(4).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="e1" class="dropdown">
+                                        <a href="index-e1.xhtml"><h:outputText value="#{seccionController.getSeccion(105).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(5).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(6).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(7).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(8).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(9).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(10).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(11).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>        
+                                    <li id="dbpe" class="dropdown">
+                                        <a href="index-dbpe.xhtml"><h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(12).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(13).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(14).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="dsft" class="dropdown">
+                                        <a href="index-dsft.xhtml"><h:outputText value="#{seccionController.getSeccion(107).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(15).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(16).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="index-contacto.xhtml">Contáctanos</a>
+                                    </li>
+                                </ul>                           
+                            </div>
+                        </nav> 
+                    </div>
+                </div>  
+            </header>
+
+            <!--========================================================
+                                      CONTENIDO
+            =========================================================-->
+
+            <main>        
+
+                <section class="well well4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <h2>
+                                    Misión
+                                    <small>
+
+                                    </small>
+                                </h2>
+                                <img class="" src="images/PERSONAL1.bmp" alt=""/>
+                                <p class="lead">
+                                    "Un lider es aquel que conoce el camino, transita el camino y muestra el camino" John C. Maxwell 
+                                </p>
+                                <p>
+                                    Gestionar el Talento Humano, mediante la administración de personal, bienestar de personal y sanidad, 
+                                    a fin de contribuir al Desarrollo de las Capacidades Militares y el Apoyo al Desarrollo Nacional.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <h2>
+                                    PROCESOS 
+                                    <small>
+
+                                    </small>
+                                </h2>
+                                Para el cumplimiento de su misión gestiona el siguiente macroproceso y procesos:
+                                <br />
+                                <article class='media offs2'>
+                                    <div class="media-left text-center">
+                                        <time datetime='2015'>Macroproceso:</time>
+                                    </div>
+                                    <div class="media-body">                  
+                                        <p>
+                                            Gestión del Talento Humano<br />
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class='media offs2'>
+                                    <div class="media-left text-center">
+                                        <time datetime='2016'>Proceso:</time>
+                                    </div>
+                                    <div class="media-body">                  
+                                        <p>
+                                            Administración de Personal<br />
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class='media offs2'>
+                                    <div class="media-left text-center">
+                                        <time datetime='2016'>Proceso:</time>
+                                    </div>
+                                    <div class="media-body">                  
+                                        <p>
+                                            Bienestar de Personal<br />
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class='media offs2'>
+                                    <div class="media-left text-center">
+                                        <time datetime='2016'>Proceso:</time>
+                                    </div>
+                                    <div class="media-body">                  
+                                        <p>
+                                            Sanidad<br />
+                                        </p>
+                                    </div>
+                                </article>
+
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <h2>
+                                    importante
+                                </h2>
+
+                                <p class="lead offs2">
+                                    Lineamientos y Disposiciones
+                                </p>
+
+                                <p>
+                                    Nuestra dirección sigue los siguientes principios:
+                                </p>
+
+                                <ul class="marked-list">                
+                                    <li>
+                                        <a href="#">
+                                            Trato cortés, respetuoso considerado a todo nivel, privilegiando el respeto al género
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Apertura de todos los niveles directivos, para dar solución a necesidades, y solicitudes profesionales, personales y familiares
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Mantener vías de comunicación expeditas para mantener la confianza y la información al personal
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Mantener la discreción, la prudencia evitando el comentario, el rumor y la maledicencia que hace daño a la organización
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="well well2">
+                    <div class="container">
+                        <h2>
+                            Conformación<br/>
+                            <small>
+                                La DGTH está integrada por las siguientes unidades administrativas:
+                            </small>
+                        </h2>
+                        <div class="row offs1">
+                            <div class="col-md-6 col-sm-12">
+                                <ul class="link-list wow fadeInLeft" data-wow-duration='3s'>
+                                    <li>
+                                        <a href="index-subdireccion.xhtml"><h:outputText value="#{departamentoController.getDepartamento(1).depaNombre}"/></a>
+                                        <a href="index-subdireccion.xhtml" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                    <li>
+                                        <a href="index-e1.xhtml"><h:outputText value="#{departamentoController.getDepartamento(2).depaNombre}"/></a>
+                                        <a href="index-e1.xhtml" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                    <li>
+                                        <a href="index-dbpe.xhtml"><h:outputText value="#{departamentoController.getDepartamento(3).depaNombre}"/></a>
+                                        <a href="index-dbpe.xhtml" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                    <li>
+                                        <a href="index-dsft.xhtml"><h:outputText value="#{departamentoController.getDepartamento(4).depaNombre}"/></a>
+                                        <a href="index-dsft.xhtml" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <img class="width_img" src="../resources/imagenes/portada.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="well well4 bg1 wow fadeIn" data-wow-duration='3s'>
+                    <div class="container">
+                        <h2>
+                            Directores
+                            <small>
+                                actuales
+                            </small>
+                        </h2>
+                        <div class="row offs3 center767">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="thumbnail1">
+                                    <img class="" src="images/zaldumbide.jpg" alt=""/>
+                                    <div class="caption">
+                                        <h4>
+                                            <a href="#">
+                                                Grab. Zaldumbide L. Luis E.
+                                            </a>
+                                        </h4>
+                                        <p>
+                                            Director General de Talento Humano (DGTH) 
+                                        </p>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="thumbnail1">
+                                    <img class="" src="images/coronel.jpg" alt=""/>
+                                    <div class="caption">
+                                        <h4>
+                                            <a href="#">
+                                                Crnl. de EMC. Coronel C. Freddy M.
+                                            </a>
+                                        </h4>
+                                        <p>
+                                            Director de Personal (E.1)
+                                        </p>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="thumbnail1">
+                                    <img class="" src="images/benitez.jpg" alt=""/>
+                                    <div class="caption">
+                                        <h4>
+                                            <a href="#">
+                                                Crnl. de EMC. Benítez S. Washington F.
+                                            </a>
+                                        </h4>
+                                        <p>
+                                            Director de Bienestar de Personal (DBPE)
+                                        </p>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="thumbnail1">
+                                    <img src="images/gudino.jpg" alt=""/>
+                                    <div class="caption">
+                                        <h4>
+                                            <a href="#">
+                                                Tcrn. Gudiño M. Ney P.
+                                            </a>
+                                        </h4>
+                                        <p>
+                                            Director de Sanidad de la Fuerza Terrestre (DSFT)
+                                        </p>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>    
+
+                <section class="well well5">
+                    <div class="container">
+                        <h2>
+                            Funciones de la DGTH<br/>
+                            <small>
+                                Atribuciones y Responsabilidades
+                            </small>
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <ul class="marked-list offs3">
+                                    <li>
+                                        <a href="#">
+                                            Administrar el Plan Integral del Talento Humano.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Validar los registros y proporcionar estadísticas del personal de la Institución.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Elaborar la estructura orgánica del nivel operativo de las unidades de la Fuerza Terrestre.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Proyectar el orgánico posicional y orgánico numérico de la Institución
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Aprobar el alta del personal militar, y realizar la selección de servidores públicos.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Administrar la rotación del personal militar de acuerdo a la normativa vigente
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Validar la liquidación individual y salarial de personal de la Institución.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Validar la evaluación del desempeño.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <ul class="marked-list offs3">
+                                    <li>
+                                        <a href="#">
+                                            Administrar los procesos de ascensos y condecoraciones del personal militar.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Desarrollar el Plan de Carrera Profesional del personal militar.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Dirigir las reformas al Reglamento de Carrera Profesional del personal militar.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Validar y elaborar el Plan de Capacitación Institucional de la Fuerza Terrestre.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Aprobar la disponibilidad, baja del personal militar; y desvinculación de servidores públicos.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Desarrollar e impulsar proyectos en el campo de Derechos Humanos, Equidad de Género y Derecho Internacional Humanitario.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Administrar los servicios de personal.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <ul class="marked-list offs3">
+                                    <li>
+                                        <a href="#">
+                                            Proponer directrices internas y supervisar el fortalecimiento del clima laboral en los ámbitos de bienestar, salud y vivienda.
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Administrar las unidades médicas.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+          <!--========================================================
+                                    PIE DE PÁGINA
+          =========================================================-->
+            <footer class="top-border">
+                <section class="well1">
+                    <div class="container"> 
+                        <p class="rights">
+                            <h:outputText value="#{seccionController.getSeccion(100).seccNombre}"/> &#169; <span id="copyright-year"></span>
+                            <a href="index-5.xhtml">Política de Privacidad</a>
+                            <a href="../index.xhtml" > <h:outputText value="#{seccionController.getSeccion(108).seccNombre}"/></a>
+                        </p>
+                    </div> 
+                </section>    
+            </footer>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/tm-scripts.js"></script> 
+    </body>
+</html>

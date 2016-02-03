@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html [<!ENTITY nbsp "&#160;"><!ENTITY times "&#215;">]>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+        <title>Contáctanos</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <!-- Links -->
+        <link rel="stylesheet" href="css/contact-form.css"/>
+        <link rel="stylesheet" href="css/google-map.css"/>
+        <link rel="stylesheet" href="css/search.css"/>
+        <!--JS-->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src='js/device.min.js'></script>
+    </head>
+    <body>
+        <div class="page">
+            <!--========================================================
+                                      ENCABEZADO
+            =========================================================-->
+            <header>  
+                <div class="container top-sect">
+                    <div class="navbar-header">
+                        <h1 class="navbar-brand">
+                            <a data-type='rd-navbar-brand' href="index.xhtml">
+                                <h:outputText value="#{seccionController.getSeccion(100).seccNombre}"/>
+                                <small> <h:outputText value="#{departamentoController.getDepartamento(7).depaNombre}"/> </small>
+                            </a>
+                        </h1>
+                        <a class="search-form_toggle" href="#"></a>
+                    </div>
+
+                    <div class="help-box text-right">
+                        <p><h:outputText value="#{seccionController.getSeccion(103).seccNombre}"/></p>
+                        <a href="tel:023968800"><h:outputText value="#{seccionController.getSeccion(102).seccNombre}"/></a>
+                        <small><span>Horarios de atención:</span><h:outputText value="#{seccionController.getSeccion(109).seccNombre}"/></small>
+                    </div>
+                </div>
+
+                <div id="stuck_container" class="stuck_container">
+                    <div class="container">   
+                        <nav class="navbar navbar-default navbar-static-top pull-left">            
+
+                            <div class="">  
+                                <ul class="nav navbar-nav sf-menu" data-type="navbar">
+                                    <li class="active">
+                                        <a href="index.xhtml">Inicio</a>
+                                    </li>
+                                    <li id="dgth" class="dropdown">
+                                        <a href="index-subdireccion.xhtml"><h:outputText value="#{seccionController.getSeccion(104).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(1).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(2).seccNombre}"/></a>                      
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(3).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(4).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="e1" class="dropdown">
+                                        <a href="index-e1.xhtml"><h:outputText value="#{seccionController.getSeccion(105).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(5).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(6).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(7).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(8).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(9).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(10).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(11).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>        
+                                    <li id="dbpe" class="dropdown">
+                                        <a href="index-dbpe.xhtml"><h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(12).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(13).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(14).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="dsft" class="dropdown">
+                                        <a href="index-dsft.xhtml"><h:outputText value="#{seccionController.getSeccion(107).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(15).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(16).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="index-contacto.xhtml">Contáctanos</a>
+                                    </li>
+                                </ul>                           
+                            </div>
+                        </nav> 
+                    </div>
+                </div>  
+            </header>
+            <!--========================================================
+                                      CONTENIDO
+            =========================================================-->
+            <main>
+                <section class="well well4">
+                    <div class="container">
+
+                        <h2>
+                            Llena estos
+                            <small>
+                                datos
+                            </small>
+                        </h2>
+                        <form id="contact-form" class='contact-form'>
+                            <div class="contact-form-loader"></div>
+                            <fieldset>
+                                <label class="name">
+                                    <input type="text" name="name" placeholder="Grado, Apellidos y Nombres:" value="" data-constraints="@Required @JustLetters"/>
+                                    <span class="empty-message">*Este campo es requerido.</span>
+                                    <span class="error-message">*Datos no validos.</span>
+                                </label>              
+
+                                <label class="phone">
+                                    <input type="text" name="phone" placeholder="Celular:" value="" data-constraints="@JustNumbers"/>
+                                    <span class="empty-message">*Este campo es requerido.</span>
+                                    <span class="error-message">*Número de celular no valido.</span>
+                                </label>
+
+                                <label class="email">
+                                    <input type="text" name="email" placeholder="Email:" value="" data-constraints="@Required @Email"/>
+                                    <span class="empty-message">*Este campo es requerido.</span>
+                                    <span class="error-message">E-mail no valido.</span>
+                                </label>
+
+                                <label class="message">
+                                    <textarea name="message" placeholder="Mensaje:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                    <span class="empty-message">*Este campo es requerido.</span>
+                                    <span class="error-message">*Mensaje muy corto.</span>
+                                </label>
+
+                                <!--  <label class="recaptcha"> <span class="empty-message">*This field is required.</span> </label> -->
+
+                                <div class="btn-wr text-primary">
+                                    <a class="btn btn-primary" href="#" data-type="submit">Enviar comentario</a>
+                                </div>
+                            </fieldset>
+                            <div class="modal fade response-message">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            Mensaje enviado. Te llamaremos pronto.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>        
+                </section>
+            </main>
+            <!--========================================================
+                                      PIE DE PÁGINA
+            =========================================================-->
+            <footer class="top-border">
+                <section class="well1">
+                    <div class="container"> 
+                        <p class="rights">
+                            <h:outputText value="#{seccionController.getSeccion(100).seccNombre}"/> &#169; <span id="copyright-year"></span>
+                            <a href="index-5.xhtml">Política de Privacidad</a>
+                            <a href="../index.xhtml" > <h:outputText value="#{seccionController.getSeccion(108).seccNombre}"/></a>
+                        </p>
+                    </div> 
+                </section>    
+            </footer>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/tm-scripts.js"></script>   
+    </body>
+</html>

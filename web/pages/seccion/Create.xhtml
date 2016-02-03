@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="SeccionCreateDlg" widgetVar="SeccionCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.CreateSeccionTitle}">
+            <h:form id="SeccionCreateForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{seccionController.selected != null}">
+                        <p:outputLabel value="#{bundle.CreateSeccionLabel_idSeccion}" for="idSeccion" />
+                        <p:inputText id="idSeccion" value="#{seccionController.selected.idSeccion}" title="#{bundle.CreateSeccionTitle_idSeccion}" disabled="true" requiredMessage="#{bundle.CreateSeccionRequiredMessage_idSeccion}"/>
+                        <p:outputLabel value="#{bundle.CreateSeccionLabel_idDepartamento}" for="idDepartamento" />
+                        <p:selectOneMenu id="idDepartamento" value="#{seccionController.selected.idDepartamento}" >
+                            <f:selectItems value="#{departamentoController.itemsDepartamentosActivos}"
+                                           var="idDepartamentoItem"
+                                           itemValue="#{idDepartamentoItem}" itemLabel="#{idDepartamentoItem.depaNombre}"/>
+                        </p:selectOneMenu>
+                        <p:outputLabel value="#{bundle.CreateSeccionLabel_seccNombre}" for="seccNombre" />
+                        <p:inputText id="seccNombre" value="#{seccionController.selected.seccNombre}" required="true" requiredMessage="#{bundle.NombreUnidadRequerido}" title="#{bundle.CreateSeccionTitle_seccNombre}" />
+                        <p:outputLabel value="#{bundle.CreateSeccionLabel_seccJefe}" for="seccJefe" />
+                        <p:inputText id="seccJefe" value="#{seccionController.selected.seccJefe}" required="true" requiredMessage="#{bundle.NombreJefeRequerido}" title="#{bundle.CreateSeccionTitle_seccJefe}" />
+                        <p:outputLabel value="#{bundle.CreateSeccionLabel_seccEstado}" for="seccEstado" />
+                        <p:selectOneMenu id="seccEstado" value="#{seccionController.selected.seccEstado}" required="true" requiredMessage="#{bundle.RequeridoEstado}">
+                            <f:selectItem itemLabel="#{bundle.SelectOneMessage}"/>
+                            <f:selectItem itemValue="Activo" itemLabel="Activo"/>
+                            <f:selectItem itemValue="Pasivo" itemLabel="Pasivo"/>
+                        </p:selectOneMenu>
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{seccionController.create}" value="#{bundle.Save}" update="display,:SeccionListForm:datalist,:growl" oncomplete="handleSubmit(args,'SeccionCreateDialog');"/>
+                    <p:commandButton value="#{bundle.Cancel}" onclick="SeccionCreateDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

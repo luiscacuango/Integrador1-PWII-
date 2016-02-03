@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="welcomePrimefaces.xhtml" x="400" y="900" zoom="true"/>
+        <Node id="Index/index-4.xhtml" x="1650" y="450" zoom="true"/>
+        <Node id="pages/funcion/Create.xhtml" x="1400" y="750" zoom="true"/>
+        <Node id="Index/js/tests/visual/button.html" x="1400" y="450" zoom="true"/>
+        <Node id="Index/assets/examples/jumbotron/index.html" x="650" y="150" zoom="true"/>
+        <Node id="Index/js/tests/visual/affix.html" x="1400" y="150" zoom="true"/>
+        <Node id="Index/assets/examples/blog/index.html" x="1900" y="300" zoom="true"/>
+        <Node id="Index/assets/examples/non-responsive/index.html" x="1400" y="900" zoom="true"/>
+        <Node id="pages/seccion/View.xhtml" x="650" y="600" zoom="true"/>
+        <Node id="Index/js/tests/index.html" x="400" y="600" zoom="true"/>
+        <Node id="Index/assets/social_media.html" x="2150" y="300" zoom="true"/>
+        <Node id="Index/js/tests/visual/dropdown.html" x="1150" y="150" zoom="true"/>
+        <Node id="pages/departamento/Create.xhtml" x="650" y="1350" zoom="true"/>
+        <Node id="Index/assets/examples/sticky-footer-navbar/index.html" x="900" y="300" zoom="true"/>
+        <Node id="Index/assets/examples/grid/index.html" x="1150" y="900" zoom="true"/>
+        <Node id="pages/seccion/List.xhtml" x="650" y="1200" zoom="true"/>
+        <Node id="Index/assets/examples/dashboard/index.html" x="400" y="300" zoom="true"/>
+        <Node id="Index/index-dsft.xhtml" x="900" y="450" zoom="true"/>
+        <Node id="Index/index-3.html" x="400" y="1200" zoom="true"/>
+        <Node id="template_res.xhtml" x="2400" y="300" zoom="true"/>
+        <Node id="Index/assets/examples/navbar-fixed-top/index.html" x="2650" y="150" zoom="true"/>
+        <Node id="index.xhtml" x="1650" y="750" zoom="true"/>
+        <Node id="index_res.xhtml" x="150" y="1350" zoom="true"/>
+        <Node id="pages/departamento/List.xhtml" x="1650" y="150" zoom="true"/>
+        <Node id="pages/seccion/Edit.xhtml" x="900" y="900" zoom="true"/>
+        <Node id="Index/js/tests/visual/scrollspy.html" x="2900" y="150" zoom="true"/>
+        <Node id="Index/index.xhtml" x="400" y="1050" zoom="true"/>
+        <Node id="Index/index-1.xhtml" x="1400" y="600" zoom="true"/>
+        <Node id="pages/departamento/View.xhtml" x="650" y="1050" zoom="true"/>
+        <Node id="Index/index-5.xhtml" x="150" y="1650" zoom="true"/>
+        <Node id="Index/assets/examples/navbar-static-top/index.html" x="150" y="300" zoom="true"/>
+        <Node id="Index/js/tests/visual/tooltip.html" x="1650" y="300" zoom="true"/>
+        <Node id="Index/js/tests/visual/popover.html" x="1150" y="450" zoom="true"/>
+        <Node id="Index/assets/examples/jumbotron-narrow/index.html" x="1150" y="750" zoom="true"/>
+        <Node id="Index/assets/examples/cover/index.html" x="150" y="600" zoom="true"/>
+        <Node id="Index/assets/under-construction.html" x="650" y="300" zoom="true"/>
+        <Node id="Index/assets/getting-started.html" x="900" y="600" zoom="true"/>
+        <Node id="Index/assets/examples/navbar/index.html" x="2400" y="150" zoom="true"/>
+        <Node id="Index/js/tests/visual/modal.html" x="650" y="900" zoom="true"/>
+        <Node id="Index/js/tests/visual/tab.html" x="2650" y="300" zoom="true"/>
+        <Node id="Index/index-2.xhtml" x="2150" y="450" zoom="true"/>
+        <Node id="Index/js/tests/visual/collapse.html" x="1900" y="150" zoom="true"/>
+        <Node id="Index/assets/examples/offcanvas/index.html" x="1900" y="600" zoom="true"/>
+        <Node id="pages/funcion/Edit.xhtml" x="400" y="750" zoom="true"/>
+        <Node id="Index/assets/examples/signin/index.html" x="150" y="450" zoom="true"/>
+        <Node id="Index/assets/examples/starter-template/index.html" x="1900" y="450" zoom="true"/>
+        <Node id="Index/assets/javascript.html" x="900" y="150" zoom="true"/>
+        <Node id="Index/assets/examples/carousel/index.html" x="400" y="1500" zoom="true"/>
+        <Node id="Index/assets/examples/sticky-footer/index.html" x="150" y="1050" zoom="true"/>
+        <Node id="Index/assets/examples/tooltip-viewport/index.html" x="400" y="150" zoom="true"/>
+        <Node id="template.xhtml" x="650" y="450" zoom="true"/>
+        <Node id="Index/404.html" x="900" y="1200" zoom="true"/>
+        <Node id="Index/index-3.xhtml" x="400" y="1350" zoom="true"/>
+        <Node id="Index/assets/portfolio.html" x="150" y="1500" zoom="true"/>
+        <Node id="Index/index-dsft.html" x="150" y="1200" zoom="true"/>
+        <Node id="Index/assets/examples/justified-nav/index.html" x="150" y="750" zoom="true"/>
+        <Node id="pages/funcion/List.xhtml" x="900" y="1050" zoom="true"/>
+        <Node id="pages/departamento/Edit.xhtml" x="1400" y="300" zoom="true"/>
+        <Node id="Index/assets/examples/theme/index.html" x="900" y="750" zoom="true"/>
+        <Node id="pages/seccion/Create.xhtml" x="1650" y="600" zoom="true"/>
+        <Node id="Index/assets/css.html" x="1150" y="1050" zoom="true"/>
+        <Node id="pages/funcion/View.xhtml" x="2150" y="150" zoom="true"/>
+        <Node id="Index/index-5.html" x="650" y="750" zoom="true"/>
+        <Node id="Index/js/tests/visual/carousel.html" x="1150" y="600" zoom="true"/>
+        <Node id="Index/assets/components.html" x="1150" y="300" zoom="true"/>
+        <Node id="Index/index-2.html" x="150" y="900" zoom="true"/>
+        <Node id="Index/js/tests/visual/alert.html" x="150" y="150" zoom="true"/>
+        <Node id="Index/assets/slider.html" x="400" y="450" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
