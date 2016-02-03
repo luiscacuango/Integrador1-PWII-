@@ -140,9 +140,9 @@
                 <section class="well well4">
                     <div class="container">
                         <h2 class='offs5'>
-                            Dirección de Bienestar de Personal
+                            <h:outputText value="#{departamentoController.getDepartamento(3).depaNombre}"/>
                             <small>
-                                (DBPE)
+                                <h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>
                             </small>            
                         </h2>
                         <div class="row offs3">
@@ -195,15 +195,14 @@
                     </div>
                 </section>
 
-                <section class="well well6 parallax parallax1" data-url="images/" data-mobile="
-                         true" data-speed="0.7">
+                <section class="well well6 parallax parallax1" data-url="images/" data-mobile="true" data-speed="0.7">
                     <div class="container">
                         <div class="wrap text-center">
                             <strong>
                                 Unidades<br />
                                 donde puedes realizar
                                 <small>
-                                    trámites de la DBPE
+                                    trámites de la <h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>
                                 </small>
                             </strong>            
                         </div>  
@@ -215,7 +214,7 @@
                         <h2>
                             Lista de Unidades de la 
                             <small>
-                                Subdirección
+                                <h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>
                             </small>
                         </h2>
                         <div class="row offs1">

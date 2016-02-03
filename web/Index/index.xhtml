@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="format-detection" content="telephone=no"/>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
-        <title>Inicio</title>
+        <title>Inicio DGTH</title>
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet"/>
         <!-- Links -->
@@ -269,15 +269,15 @@
                                         <a href="index-subdireccion.xhtml" class="btn-link l-h1 fa-angle-right"></a>
                                     </li>
                                     <li>
-                                        <a href="index-e1.xhtml"><h:outputText value="#{departamentoController.getDepartamento(2).depaNombre}"/></a>
+                                        <a href="index-e1.xhtml"><h:outputText value="#{departamentoController.getDepartamento(2).depaNombre} (#{seccionController.getSeccion(105).seccNombre})"/></a>
                                         <a href="index-e1.xhtml" class="btn-link l-h1 fa-angle-right"></a>
                                     </li>
                                     <li>
-                                        <a href="index-dbpe.xhtml"><h:outputText value="#{departamentoController.getDepartamento(3).depaNombre}"/></a>
+                                        <a href="index-dbpe.xhtml"><h:outputText value="#{departamentoController.getDepartamento(3).depaNombre} (#{seccionController.getSeccion(106).seccNombre})"/></a>
                                         <a href="index-dbpe.xhtml" class="btn-link l-h1 fa-angle-right"></a>
                                     </li>
                                     <li>
-                                        <a href="index-dsft.xhtml"><h:outputText value="#{departamentoController.getDepartamento(4).depaNombre}"/></a>
+                                        <a href="index-dsft.xhtml"><h:outputText value="#{departamentoController.getDepartamento(4).depaNombre} (#{seccionController.getSeccion(107).seccNombre})"/></a>
                                         <a href="index-dsft.xhtml" class="btn-link l-h1 fa-angle-right"></a>
                                     </li>
                                 </ul>
@@ -304,11 +304,12 @@
                                     <div class="caption">
                                         <h4>
                                             <a href="#">
-                                                Grab. Zaldumbide L. Luis E.
+                                                <h:outputText value="#{departamentoController.getDepartamento(7).depaJefe}"/>
                                             </a>
                                         </h4>
                                         <p>
-                                            Director General de Talento Humano (DGTH) 
+                                            <h:outputText value="#{seccionController.getSeccion(110).seccJefe} "/>
+                                            (<h:outputText value="#{seccionController.getSeccion(110).seccNombre}"/>)
                                         </p>
                                     </div>  
                                 </div>
@@ -319,28 +320,30 @@
                                     <div class="caption">
                                         <h4>
                                             <a href="#">
-                                                Crnl. de EMC. Coronel C. Freddy M.
+                                                <h:outputText value="#{departamentoController.getDepartamento(2).depaJefe}"/>
                                             </a>
                                         </h4>
                                         <p>
-                                            Director de Personal (E.1)
+                                            <h:outputText value="#{seccionController.getSeccion(105).seccJefe} "/>
+                                            (<h:outputText value="#{seccionController.getSeccion(105).seccNombre}"/>)
                                         </p>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <div class="thumbnail1">
-                                    <img class="" src="images/benitez.jpg" alt=""/>
+                                    <img class="" src="images/palacios.jpg" alt=""/>
                                     <div class="caption">
                                         <h4>
                                             <a href="#">
-                                                Crnl. de EMC. Benítez S. Washington F.
+                                                <h:outputText value="#{departamentoController.getDepartamento(3).depaJefe}"/>
                                             </a>
                                         </h4>
                                         <p>
-                                            Director de Bienestar de Personal (DBPE)
+                                            <h:outputText value="#{seccionController.getSeccion(106).seccJefe} "/>
+                                            (<h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>)
                                         </p>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">
@@ -349,13 +352,14 @@
                                     <div class="caption">
                                         <h4>
                                             <a href="#">
-                                                Tcrn. Gudiño M. Ney P.
+                                                <h:outputText value="#{departamentoController.getDepartamento(4).depaJefe}"/>
                                             </a>
                                         </h4>
                                         <p>
-                                            Director de Sanidad de la Fuerza Terrestre (DSFT)
+                                            <h:outputText value="#{seccionController.getSeccion(107).seccJefe} "/>
+                                            (<h:outputText value="#{seccionController.getSeccion(107).seccNombre}"/>)
                                         </p>
-                                    </div>  
+                                    </div> 
                                 </div>
                             </div>
                         </div>
@@ -475,9 +479,9 @@
                 </section>
 
             </main>
-          <!--========================================================
-                                    PIE DE PÁGINA
-          =========================================================-->
+            <!--========================================================
+                                      PIE DE PÁGINA
+            =========================================================-->
             <footer class="top-border">
                 <section class="well1">
                     <div class="container"> 

@@ -1,16 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
     <head>
-        <title>TODO supply a title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+        <title>E.1</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <!-- Links -->
+        <link rel="stylesheet" href="css/search.css"/>
+        <!--JS-->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/rd-smoothscroll.min.js"></script>
+        <script src='js/device.min.js'></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="page">
+            <!--========================================================
+                                      ENCABEZADO
+            =========================================================-->
+            <header>  
+                <div class="container top-sect">
+                    <div class="navbar-header">
+                        <h1 class="navbar-brand">
+                            <a data-type='rd-navbar-brand' href="index.xhtml">
+                                <h:outputText value="#{seccionController.getSeccion(100).seccNombre}"/>
+                                <small> <h:outputText value="#{departamentoController.getDepartamento(7).depaNombre}"/> </small>
+                            </a>
+                        </h1>
+                        <a class="search-form_toggle" href="#"></a>
+                    </div>
+
+                    <div class="help-box text-right">
+                        <p><h:outputText value="#{seccionController.getSeccion(103).seccNombre}"/></p>
+                        <a href="tel:023968800"><h:outputText value="#{seccionController.getSeccion(102).seccNombre}"/></a>
+                        <small><span>Horarios de atención:</span><h:outputText value="#{seccionController.getSeccion(109).seccNombre}"/></small>
+                    </div>
+                </div>
+
+                <div id="stuck_container" class="stuck_container">
+                    <div class="container">   
+                        <nav class="navbar navbar-default navbar-static-top pull-left">            
+
+                            <div class="">  
+                                <ul class="nav navbar-nav sf-menu" data-type="navbar">
+                                    <li class="active">
+                                        <a href="index.xhtml">Inicio</a>
+                                    </li>
+                                    <li id="dgth" class="dropdown">
+                                        <a href="index-subdireccion.xhtml"><h:outputText value="#{seccionController.getSeccion(104).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(1).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(2).seccNombre}"/></a>                      
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(3).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(4).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="e1" class="dropdown">
+                                        <a href="index-e1.xhtml"><h:outputText value="#{seccionController.getSeccion(105).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(5).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(6).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(7).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(8).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(9).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(10).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(11).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>        
+                                    <li id="dbpe" class="dropdown">
+                                        <a href="index-dbpe.xhtml"><h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(12).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(13).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(14).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="dsft" class="dropdown">
+                                        <a href="index-dsft.xhtml"><h:outputText value="#{seccionController.getSeccion(107).seccNombre}"/>
+                                            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(15).seccNombre}"/></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(16).seccNombre}"/></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="index-contacto.xhtml">Contáctanos</a>
+                                    </li>
+                                </ul>                           
+                            </div>
+                        </nav> 
+                    </div>
+                </div>  
+            </header>
+            <!--========================================================
+                                      CONTENIDO
+            =========================================================-->
+            <main>        
+                <section class="well well4">
+                    <div class="container">
+                        <h2 class='offs5'>
+                            <h:outputText value="#{departamentoController.getDepartamento(2).depaNombre}"/>
+                            <small>
+                                <h:outputText value="(#{seccionController.getSeccion(105).seccNombre})"/>
+                            </small>            
+                        </h2>
+                        <div class="row offs3">
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <a class="thumb" data-fancybox-group='1' href="images/page-3_img1_original.jpg">              
+                                    <img class="" src="images/page-3_img1.jpg" alt=""/>
+                                    <span class='thumb_overlay'></span>
+                                </a>
+                                <p class="lead">
+                                    Do eiusmod tempor incididunt ut labore 
+                                </p>
+                                <p class="ins767-1">
+                                    Curabitur eu lorem ac lacus laoreet auctor. Fusce vitae orci nec velit ornare rhoncus ut tempus est. Ma uris eu augue lorem. Suspendisse sit
+                                    <br /><br />
+                                    Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <a class="thumb" data-fancybox-group='1' href="images/page-3_img2_original.jpg">              
+                                    <img class="" src="images/page-3_img2.jpg" alt=""/>
+                                    <span class='thumb_overlay'></span>
+                                </a>  
+                                <p class="lead">
+                                    Ancididunt ut labore et dolore magna
+                                </p>
+                                <p class="ins767-1">
+                                    Ma uris eu augue lorem. Suspendisse sitmet vehi
+                                    cula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. Nulla nulla tellus
+                                    <br /><br />
+                                    Fincidunt vel eros gravida, cursus cursus nisl. Nullam ac magna nisi. Integer dictum  <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <a class="thumb" data-fancybox-group='1' href="images/page-3_img3_original.jpg">              
+                                    <img class="" src="images/page-3_img3.jpg" alt=""/>
+                                    <span class='thumb_overlay'></span>
+                                </a>  
+                                <p class="lead">
+                                    Ut enim ad minim veniam quis nostrud
+                                </p>
+                                <p class="ins767-1">
+                                    Suspendisse sitmet vehicula nisl, nec faucibus
+                                    nisl. Proin ac ferme ntum orci, non semper metus. Nul la nulla tellus, tincidunt vel eros gravid
+                                    <br /><br />
+                                    Nullam ac magna nisi. Integer dictum sagittis vulp
+                                    utate. Nulla a purus felisam  <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="well well6 parallax parallax1" data-url="images/" data-mobile="true" data-speed="0.7">
+                    <div class="container">
+                        <div class="wrap text-center">
+                            <strong>
+                                Unidades<br />
+                                donde puedes realizar
+                                <small>
+                                    trámites de la DBPE
+                                </small>
+                            </strong>            
+                        </div>  
+                    </div>        
+                </section>
+
+                <section class="well well2">
+                    <div class="container">
+                        <h2>
+                            Lista de Unidades de la 
+                            <small>
+                                Subdirección
+                            </small>
+                        </h2>
+                        <div class="row offs1">
+                            <div class="col-md-6 col-sm-12">
+                                <ul class="link-list wow fadeInLeft" data-wow-duration='3s'>
+                                    <li>
+                                        <a href="#">Ingresos y Salidas</a>
+                                        <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Movimientos de personal</a>
+                                        <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Remuneraciones (sueldos)</a>
+                                        <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Evaluación del Desempeño</a>
+                                        <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Desarrollo del Talento Humano</a>
+                                        <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Servidores y Trabajadores Públicos</a>
+                                        <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <p>
+                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nisl. Nullam ac magna nisi. Integer dictum sagittis vulputate. Nulla a purus felis. Nam nec egestas justo. Nunc id risus neque. Pellentesque vestibulum lectus sed ex efficitur lacinia. Sed efficitur nunc sed rhoncus tempor. Quisque ultricies
+                                    <br /><br />
+                                    Maecenas dignissim, metus a luctus lacinia, nisl purus commodo tortor, vel rutrum urna arcu non massa. Quisque tellus velit, dignissim interdum enim in, sodales suscipit purus. Curabitur et tincidunt elit. Phasellus pulvinar bibendum dapibus. Sed mollis sapien in justo tincidunt, quis venenatis orci ornare. Proin sed nisi ut diam volutpat malesuada. Nullam cursus aliquet nunc 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>   
+
+                <section class="well well4">
+                    <div class="container">
+                        <h2>
+                            función de cada
+                            <small>
+                                Unidad
+                            </small>            
+                        </h2>
+                        <div class="row offs3">
+                            <div class="col-md-3 col-sm-6 col-xs-12"> 
+                                <img class="" src="images/page-3_img4.jpg" alt=""/>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">             
+                                <p class="lead lead_offs2">
+                                    Ingresos y Salidas
+                                </p>
+                                <p class="ins767-1">
+                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
+                                    <br /><br />
+                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 clear991"> 
+                                <img class="" src="images/page-3_img5.jpg" alt=""/>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">             
+                                <p class="lead lead_offs2">
+                                    Movimientos de personal
+                                </p>
+                                <p class="ins767-1">
+                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
+                                    <br /><br />
+                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>           
+                        </div>
+                        <div class="row row_offs">
+                            <div class="col-md-3 col-sm-6 col-xs-12"> 
+                                <img class="" src="images/page-3_img6.jpg" alt=""/>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">             
+                                <p class="lead lead_offs2">
+                                    Remuneraciones (sueldos)
+                                </p>
+                                <p class="ins767-1">
+                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
+                                    <br /><br />
+                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 clear991"> 
+                                <img class="" src="images/page-3_img7.jpg" alt=""/>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">             
+                                <p class="lead lead_offs2">
+                                    Evaluación del Desempeño
+                                </p>
+                                <p class="ins767-1">
+                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
+                                    <br /><br />
+                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">             
+                                <p class="lead lead_offs2">
+                                    Desarrollo del Talento Humano
+                                </p>
+                                <p class="ins767-1">
+                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
+                                    <br /><br />
+                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">             
+                                <p class="lead lead_offs2">
+                                    Servidores y Trabajadores Públicos
+                                </p>
+                                <p class="ins767-1">
+                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
+                                    <br /><br />
+                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main> 
+            <!--========================================================
+                                  PIE DE PÁGINA
+              =========================================================-->
+            <footer class="top-border">
+                <section class="well1">
+                    <div class="container"> 
+                        <p class="rights">
+                            <h:outputText value="#{seccionController.getSeccion(100).seccNombre}"/> &#169; <span id="copyright-year"></span>
+                            <a href="index-5.xhtml">Política de Privacidad</a>
+                            <a href="../index.xhtml" > <h:outputText value="#{seccionController.getSeccion(108).seccNombre}"/></a>
+                        </p>
+                    </div> 
+                </section>    
+            </footer>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/tm-scripts.js"></script> 
     </body>
 </html>

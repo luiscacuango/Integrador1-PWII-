@@ -30,7 +30,7 @@
                         <h1 class="navbar-brand">
                             <a data-type='rd-navbar-brand' href="index.xhtml">
                                 <h:outputText value="#{seccionController.getSeccion(100).seccNombre}"/>
-                                <small> <h:outputText value="#{seccionController.getSeccion(101).seccNombre}"/> </small>
+                                <small> <h:outputText value="#{departamentoController.getDepartamento(7).depaNombre}"/> </small>
                             </a>
                         </h1>
                         <a class="search-form_toggle" href="#"></a>
@@ -38,8 +38,8 @@
 
                     <div class="help-box text-right">
                         <p><h:outputText value="#{seccionController.getSeccion(103).seccNombre}"/></p>
-                        <a href="tel:#"><h:outputText value="#{seccionController.getSeccion(102).seccNombre}"/></a>
-                        <small><span>Horario:</span><h:outputText value="#{seccionController.getSeccion(109).seccNombre}"/></small>
+                        <a href="tel:023968800"><h:outputText value="#{seccionController.getSeccion(102).seccNombre}"/></a>
+                        <small><span>Horarios de atención:</span><h:outputText value="#{seccionController.getSeccion(109).seccNombre}"/></small>
                     </div>
                 </div>
 
@@ -53,62 +53,62 @@
                                         <a href="index.xhtml">Inicio</a>
                                     </li>
                                     <li id="dgth" class="dropdown">
-                                        <a href="index-1.xhtml"><h:outputText value="#{seccionController.getSeccion(104).seccNombre}"/>
+                                        <a href="index-subdireccion.xhtml"><h:outputText value="#{seccionController.getSeccion(104).seccNombre}"/>
                                             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="#">Planificación</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(1).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Funcional</a>                      
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(2).seccNombre}"/></a>                      
                                             </li>
                                             <li>
-                                                <a href="#">Estadística, Archivo y SIPER</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(3).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Derechos Humanos y DJ.H</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(4).seccNombre}"/></a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li id="e1" class="dropdown">
-                                        <a href="index-2.xhtml"><h:outputText value="#{seccionController.getSeccion(105).seccNombre}"/>
+                                        <a href="index-e1.xhtml"><h:outputText value="#{seccionController.getSeccion(105).seccNombre}"/>
                                             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="#">Ingresos y Salidas</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(5).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Movimientos de personal</a>                      
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(6).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Remuneraciones (sueldos)</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(7).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Evaluación del Desempeño</a>                      
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(8).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Derechos Humanos</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(9).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Desarrollo del Talento Humano</a>                      
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(10).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Servidores y Trabajadores públicos</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(11).seccNombre}"/></a>
                                             </li>
                                         </ul>
                                     </li>        
                                     <li id="dbpe" class="dropdown">
-                                        <a href="index-3.xhtml"><h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>
+                                        <a href="index-dbpe.xhtml"><h:outputText value="#{seccionController.getSeccion(106).seccNombre}"/>
                                             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="#">Asistencia Social</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(12).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Admin. de Servicios Sociales</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(13).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Clima Laboral</a>                      
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(14).seccNombre}"/></a>
                                             </li>
                                         </ul>
                                     </li>
@@ -117,15 +117,15 @@
                                             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="#">Sanidad Militar</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(15).seccNombre}"/></a>
                                             </li>
                                             <li>
-                                                <a href="#">Salud</a>
+                                                <a href="#"><h:outputText value="#{seccionController.getSeccion(16).seccNombre}"/></a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="index-4.xhtml">Contáctanos</a>
+                                        <a href="index-contacto.xhtml">Contáctanos</a>
                                     </li>
                                 </ul>                           
                             </div>
@@ -140,70 +140,94 @@
                 <section class="well well4">
                     <div class="container">
                         <h2 class='offs5'>
-                            Subdirección de la 
+                            <h:outputText value="#{seccionController.getSeccion(104).seccNombre} "/>de la 
                             <small>
-                                (DGTH)
+                                <h:outputText value="(#{seccionController.getSeccion(110).seccNombre})"/>
                             </small>            
                         </h2>
                         <div class="row offs3">
                             <div class="col-md-4 col-sm-12 col-xs-12">
-                                <a class="thumb" data-fancybox-group='1' href="images/page-3_img1_original.jpg">              
-                                    <img class="" src="images/page-3_img1.jpg" alt=""/>
+                                <a class="thumb" data-fancybox-group='1' href="images/ejercito8.jpg">              
+                                    <img class="" src="images/ejercito8.jpg" alt=""/>
                                     <span class='thumb_overlay'></span>
                                 </a>
                                 <p class="lead">
-                                    Do eiusmod tempor incididunt ut labore 
+                                    Propósito
                                 </p>
                                 <p class="ins767-1">
-                                    Curabitur eu lorem ac lacus laoreet auctor. Fusce vitae orci nec velit ornare rhoncus ut tempus est. Ma uris eu augue lorem. Suspendisse sit
-                                    <br /><br />
-                                    Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    Liderar la Planificación del Talento Humano, administración del orgánico estructural - numérico de la Fuerza Terrestre; mantiene relación de dependencia con la Dirección General del Talento Humano.
                                 </p>
                             </div>
                             <div class="col-md-4 col-sm-12 col-xs-12">
-                                <a class="thumb" data-fancybox-group='1' href="images/page-3_img2_original.jpg">              
-                                    <img class="" src="images/page-3_img2.jpg" alt=""/>
+                                <a class="thumb" data-fancybox-group='1' href="images/ejercito6.jpg">              
+                                    <img class="" src="images/ejercito6.jpg" alt=""/>
                                     <span class='thumb_overlay'></span>
                                 </a>  
                                 <p class="lead">
-                                    Ancididunt ut labore et dolore magna
+                                    Procesos
                                 </p>
                                 <p class="ins767-1">
-                                    Ma uris eu augue lorem. Suspendisse sitmet vehi
-                                    cula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. Nulla nulla tellus
-                                    <br /><br />
-                                    Fincidunt vel eros gravida, cursus cursus nisl. Nullam ac magna nisi. Integer dictum  <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    Para el cumplimiento de su objetivo gestiona los siguientes subprocesos:
+                                    <article class='media offs2'>
+                                        <div class="media-left text-center">
+                                            <time datetime='2016'>Subproceso:</time>
+                                        </div>
+                                        <div class="media-body">                  
+                                            <p>
+                                                Planificación del Talento Humano<br />
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class='media offs2'>
+                                        <div class="media-left text-center">
+                                            <time datetime='2016'>Subproceso:</time>
+                                        </div>
+                                        <div class="media-body">                  
+                                            <p>
+                                                Estadística<br />
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class='media offs2'>
+                                        <div class="media-left text-center">
+                                            <time datetime='2016'>Subproceso:</time>
+                                        </div>
+                                        <div class="media-body">                  
+                                            <p>
+                                                Derechos Humanos y DIH<br />
+                                            </p>
+                                        </div>
+                                    </article>
                                 </p>
                             </div>
                             <div class="col-md-4 col-sm-12 col-xs-12">
-                                <a class="thumb" data-fancybox-group='1' href="images/page-3_img3_original.jpg">              
-                                    <img class="" src="images/page-3_img3.jpg" alt=""/>
+                                <a class="thumb" data-fancybox-group='1' href="images/ejercito10.jpg">              
+                                    <img class="" src="images/ejercito10.jpg" alt=""/>
                                     <span class='thumb_overlay'></span>
                                 </a>  
                                 <p class="lead">
-                                    Ut enim ad minim veniam quis nostrud
+                                    Conformación
                                 </p>
                                 <p class="ins767-1">
-                                    Suspendisse sitmet vehicula nisl, nec faucibus
-                                    nisl. Proin ac ferme ntum orci, non semper metus. Nul la nulla tellus, tincidunt vel eros gravid
-                                    <br /><br />
-                                    Nullam ac magna nisi. Integer dictum sagittis vulp
-                                    utate. Nulla a purus felisam  <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    La Subdirección General del Talento Humano está integrada por las siguientes unidades administrativas:
+                                    <br/><br/><a class="btn-link">1. Unidad de Planificación del Talento Humano</a>
+                                    <br/><a class="btn-link">2. Unidad Funcional de Talento Humano</a>
+                                    <br/><a class="btn-link">3. Unidad de Estadística, Archivo y SIPER</a>
+                                    <br/><a class="btn-link">4. Unidad de Derechos Humanos y DIH</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="well well6 parallax parallax1" data-url="images/parallax2.jpg" data-mobile="
-                         true" data-speed="0.7">
+                <section class="well well6 parallax parallax1" data-url="images/cenepa2.JPG" data-mobile="true" data-speed="0.7">
                     <div class="container">
                         <div class="wrap text-center">
                             <strong>
                                 Unidades<br />
                                 donde puedes realizar
                                 <small>
-                                    trámites de la SUBDIRECCIÓN
+                                    trámites de la <h:outputText value="#{seccionController.getSeccion(104).seccNombre}"/>
                                 </small>
                             </strong>            
                         </div>  
@@ -215,44 +239,43 @@
                         <h2>
                             Lista de Unidades de la 
                             <small>
-                                Subdirección
+                                <h:outputText value="#{seccionController.getSeccion(104).seccNombre}"/>
                             </small>
                         </h2>
                         <div class="row offs1">
                             <div class="col-md-6 col-sm-12">
                                 <ul class="link-list wow fadeInLeft" data-wow-duration='3s'>
                                     <li>
-                                        <a href="#">Ingresos y Salidas</a>
+                                        <a href="#"><h:outputText value="#{seccionController.getSeccion(1).seccNombre}"/></a>
                                         <a href="#" class="btn-link l-h1 fa-angle-right"></a>
                                     </li>
                                     <li>
-                                        <a href="#">Movimientos de personal</a>
+                                        <a href="#"><h:outputText value="#{seccionController.getSeccion(2).seccNombre}"/></a>
                                         <a href="#" class="btn-link l-h1 fa-angle-right"></a>
                                     </li>
                                     <li>
-                                        <a href="#">Remuneraciones (sueldos)</a>
+                                        <a href="#"><h:outputText value="#{seccionController.getSeccion(3).seccNombre}"/></a>
                                         <a href="#" class="btn-link l-h1 fa-angle-right"></a>
                                     </li>
                                     <li>
-                                        <a href="#">Evaluación del Desempeño</a>
-                                        <a href="#" class="btn-link l-h1 fa-angle-right"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Desarrollo del Talento Humano</a>
-                                        <a href="#" class="btn-link l-h1 fa-angle-right"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Servidores y Trabajadores Públicos</a>
+                                        <a href="#"><h:outputText value="#{seccionController.getSeccion(4).seccNombre}"/></a>
                                         <a href="#" class="btn-link l-h1 fa-angle-right"></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <p>
-                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nisl. Nullam ac magna nisi. Integer dictum sagittis vulputate. Nulla a purus felis. Nam nec egestas justo. Nunc id risus neque. Pellentesque vestibulum lectus sed ex efficitur lacinia. Sed efficitur nunc sed rhoncus tempor. Quisque ultricies
-                                    <br /><br />
-                                    Maecenas dignissim, metus a luctus lacinia, nisl purus commodo tortor, vel rutrum urna arcu non massa. Quisque tellus velit, dignissim interdum enim in, sodales suscipit purus. Curabitur et tincidunt elit. Phasellus pulvinar bibendum dapibus. Sed mollis sapien in justo tincidunt, quis venenatis orci ornare. Proin sed nisi ut diam volutpat malesuada. Nullam cursus aliquet nunc 
-                                </p>
+                                    <p class="lead">
+                                        Atribuciones y responsabilidades de la <h:outputText value="#{seccionController.getSeccion(104).seccNombre}"/>
+                                    </p><br/>
+                                    1.	Coordina, dirige, supervisa y evalúa la gestión de las Direcciones de Personal, Bienestar de Personal y Sanidad de la Fuerza Terrestre;<br/>
+                                    2.	Cumple y hace cumplir las disposiciones emanadas por el Director General del Talento Humano;<br/>
+                                    3.	En caso de ausencia o impedimento temporal del Director General, en el ejercicio del cargo, le reemplazará el Subdirector General;<br/>
+                                    4.	Realiza las actividades como Relator del Plan Básico;<br/>
+                                    5.	Cumple el Art. 21 del Reglamento de Condecoraciones<br/>
+                                    6.	Dirige la Planificación Integral del Talento Humano; <br/>
+                                    7.	Consolida y supervisa los programas y proyectos relacionados con el Talento Humano;<br/>
+                                    8.	Establece y administra métodos para asegurar el cumplimiento de la normativa, implementación y medición del desempeño de los procesos de Talento Humano;<br/>
+                                    9.	Supervisa el sistema de evaluación del Talento Humano mediante la operacionalización de los  Indicadores de Resultado y Desempeño;
                             </div>
                         </div>
                     </div>
@@ -261,7 +284,7 @@
                 <section class="well well4">
                     <div class="container">
                         <h2>
-                            función de cada
+                            Funciónes de cada
                             <small>
                                 Unidad
                             </small>            
@@ -272,12 +295,13 @@
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">             
                                 <p class="lead lead_offs2">
-                                    Ingresos y Salidas
+                                    <h:outputText value="#{seccionController.getSeccion(1).seccNombre}"/>
                                 </p>
                                 <p class="ins767-1">
-                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
-                                    <br /><br />
-                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    1.	Elabora, gestiona y ejecuta el Plan Integral del Talento Humano (civil y militar).<br/>
+                                    2.	Brinda soporte a la formulación de los planes de la Dirección General del Talento Humano. <br/>
+                                    3.	Instruye y coordina las actividades en el marco de los objetivos propuestos en la planificación integral.<br/>
+                                    4.	Propone planes, directivas e instructivos.
                                 </p>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12 clear991"> 
@@ -285,12 +309,12 @@
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">             
                                 <p class="lead lead_offs2">
-                                    Movimientos de personal
+                                    <h:outputText value="#{seccionController.getSeccion(2).seccNombre}"/>
                                 </p>
                                 <p class="ins767-1">
-                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
-                                    <br /><br />
-                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    1.	Diseña, elabora, los planes anuales en coordinación con las diferentes direcciones y unidades de la Dirección General.<br/>
+                                    2.	Prevé, las necesidades de talento humano de la Fuerza Terrestre en función de la cantidad de efectivos impuestos planificados.<br/>
+                                    3.	Presenta informes de seguimiento, monitoreo y evaluación del avance de planes, programas y proyectos institucionales.
                                 </p>
                             </div>           
                         </div>
@@ -300,12 +324,15 @@
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">             
                                 <p class="lead lead_offs2">
-                                    Remuneraciones (sueldos)
+                                    <h:outputText value="#{seccionController.getSeccion(3).seccNombre}"/>
                                 </p>
                                 <p class="ins767-1">
-                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
-                                    <br /><br />
-                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    1.	Recolectar, analizar e interpretar la información del sistema de Personal;<br/>
+                                    2.	Automatizar, digitalizar y administrar el archivo de Personal;<br/>
+                                    3.	Realizar proyecciones estadísticas;<br/>
+                                    4.	Preparar y proporcionar información para la toma de decisiones;<br/>
+                                    5.	Administrar la información del SIPER;<br/>
+                                    6.	Preparar informes estadísticos.
                                 </p>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12 clear991"> 
@@ -313,32 +340,12 @@
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">             
                                 <p class="lead lead_offs2">
-                                    Evaluación del Desempeño
+                                    <h:outputText value="#{seccionController.getSeccion(4).seccNombre}"/>
                                 </p>
                                 <p class="ins767-1">
-                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
-                                    <br /><br />
-                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
-                                </p>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">             
-                                <p class="lead lead_offs2">
-                                    Desarrollo del Talento Humano
-                                </p>
-                                <p class="ins767-1">
-                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
-                                    <br /><br />
-                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
-                                </p>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">             
-                                <p class="lead lead_offs2">
-                                    Servidores y Trabajadores Públicos
-                                </p>
-                                <p class="ins767-1">
-                                    Suspendisse sit.Amet vehicula nisl, nec faucibus nisl. Proin ac ferme ntum orci, non semper metus. 
-                                    <br /><br />
-                                    Nulla nulla tellus, tincidunt vel eros gravida, cursus cursus nislulla <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                                    1.	Elabora y consolida los diagnósticos de las necesidades de derechos humanos, Derecho Internacional Humanitario, Género e Interculturalidad.<br/>
+                                    2.	Planifica visitas a las Unidades, para seguimiento de presuntas violaciones a los derechos humanos.<br/>
+                                    3.	Elabora informes sobre presuntas violaciones a los derechos humanos.
                                 </p>
                             </div>
                         </div>
